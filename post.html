@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="post.css">
+    <title>Blog Post</title>
+</head>
+<body>
+    <header>
+        <h1>Kd's Gaming Blogs</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="manage-posts.html">Manage Posts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="post-container">
+            <div id="post-content">
+                <h2 id="post-title"></h2>
+                <p id="post-date" class="post-info"></p>
+                <img id="post-image" class="post-image" alt="Post Image">
+                <div id="post-body" class="post-body"></div>
+            </div>
+
+            <div id="sidebar">
+                <h3>All Posts</h3>
+                <ul id="posts-list"></ul>
+            </div>
+        </div>
+
+        <div id="comments-section">
+            <h3>Comments</h3>
+            <div id="comments-list"></div>
+
+            <div id="comment-form-container">
+                <h4>Leave a Comment</h4>
+                <form id="comment-form">
+                    <input type="text" id="comment-name" placeholder="Your Name" required>
+                    <textarea id="comment-text" placeholder="Your Comment" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Kd's Gaming Blogs All rights are Reserved</p>
+    </footer>
+
+    <script src="post.js"></script>
+</body>
+</html>

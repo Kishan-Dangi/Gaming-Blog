@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Ruda:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Doto:wght@100..900&family=Ruda:wght@400..900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    background-image: url("/img/btmn.jpg");
+    background-repeat: no-repeat;
+}
+
+header h1 {
+    text-align: center;
+    font-family: "Cinzel", serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="file"],
+div[contenteditable="true"] {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+#image-preview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Manage Posts Styles */
+#posts-list {
+    list-style-type: none;
+    /* Remove bullet points */
+    padding: 0;
+    /* Remove default padding */
+}
+
+#posts-list>div {
+    border: 1px solid #ddd;
+    /* Optional: Add border for separation */
+    padding: 10px;
+    /* Add some padding */
+    border-radius: 5px;
+    /* Round the corners */
+    background-color: #f9f9f9;
+    /* Light background for each post */
+}
+
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-image: url("/img/btmn.jpg");
+    background-repeat: no-repeat;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

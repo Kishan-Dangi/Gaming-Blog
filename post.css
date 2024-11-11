@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Ruda:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Doto:wght@100..900&family=Ruda:wght@400..900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-y: scroll;
+}
+
+header {
+    background-color: #010101;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    background-image: url("/img/btmn.jpg");
+    background-repeat: no-repeat;
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #0073e6;
+}
+
+main {
+    padding: 20px;
+}
+
+
+#post-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+#post-content {
+    flex: 0 0 70%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#post-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#post-date {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.post-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.post-body {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+#sidebar {
+    flex: 0 0 15%;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#sidebar h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#posts-list {
+    list-style: none;
+    padding: 0;
+}
+
+#posts-list li {
+    margin-bottom: 10px;
+}
+
+#posts-list li a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#posts-list li a:hover {
+    text-decoration: underline;
+}
+
+#comments-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+#comments-section h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#comments-list {
+    margin-bottom: 20px;
+}
+
+.comment {
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid #0073e6;
+    border-radius: 5px;
+}
+
+.comment-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.comment-text {
+    color: #444;
+    margin-top: 5px;
+}
+
+#comment-form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#comment-form-container h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#comment-form input, #comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#comment-form button {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#comment-form button:hover {
+    background-color: #005bb5;
+}
+
+footer {
+    background-image: url("/img/btmn.jpg");
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #post-container {
+        flex-direction: column;
+    }
+
+    #post-content {
+        flex: 1;
+    }
+
+    #sidebar {
+        flex: 1;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    #post-content {
+        padding: 15px;
+    }
+
+    #sidebar {
+        padding: 15px;
+    }
+}

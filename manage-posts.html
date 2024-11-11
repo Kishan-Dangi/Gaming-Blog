@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="manage-posts.css">
+    <title>Manage Posts</title>
+</head>
+<body>
+    <header>
+        <h1>Manage Blog Posts</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="manage-posts.html">Manage Posts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form id="post-form">
+            <input type="text" id="title" placeholder="Post Title" required>
+            <input type="file" id="image-upload" accept="image/*" required>
+            <div id="image-preview"></div>
+            <div contenteditable="true" id="content" placeholder="Write your post here..." required></div>
+            <button type="button" onclick="formatText('bold')">Bold</button>
+            <button type="button" onclick="formatText('italic')">Italic</button>
+            <button type="submit">Add Post</button>
+        </form>
+        <div id="posts-list"></div>
+    </main>
+
+    <footer>
+        <p>&copy; Kd's Gaming Blogs All rights are Reserved</p>
+    </footer>
+
+    <script src="manage-post.js"></script>
+</body>
+</html>
